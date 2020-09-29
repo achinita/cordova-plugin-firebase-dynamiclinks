@@ -23,7 +23,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <!--<dependency id="cordova-plugin-firebase-analytics" version="~4.5.0"/>-->
 
     <platform name="android">
-        <preference name="ANDROID_FIREBASE_DYNAMICLINKS_VERSION" default="19.1.+"/>
+        <preference name="ANDROID_FIREBASE_DYNAMICLINKS_VERSION" default="17.0.0"/>
 
         <config-file parent="/*" target="res/xml/config.xml">
             <preference name="DYNAMIC_LINK_URIPREFIX" value="https://$PAGE_LINK_DOMAIN"/>
@@ -51,7 +51,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </platform>
 
     <platform name="ios">
-        <preference name="IOS_FIREBASE_DYNAMICLINKS_VERSION" default="~> 6.32.2"/>
+        <preference name="IOS_FIREBASE_DYNAMICLINKS_VERSION" default="4.0.5"/>
 
         <config-file parent="/*" target="config.xml">
             <preference name="DYNAMIC_LINK_URIPREFIX" value="https://$PAGE_LINK_DOMAIN"/>
@@ -91,15 +91,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/ios/AppDelegate+FirebaseDynamicLinksPlugin.m" />
         <header-file src="src/ios/FirebaseDynamicLinksPlugin.h" />
         <source-file src="src/ios/FirebaseDynamicLinksPlugin.m" />
-
-        <podspec>
-            <config>
-                <source url="https://cdn.cocoapods.org/"/>
-            </config>
-            <pods>
-                <pod name="Firebase/DynamicLinks" spec="$IOS_FIREBASE_DYNAMICLINKS_VERSION" />
-            </pods>
-        </podspec>
+           
+        <framework src="FirebaseDynamicLinks" type="podspec" spec="$IOS_FIREBASE_DYNAMICLINKS_VERSION" />
+        
     </platform>
 
 </plugin>
