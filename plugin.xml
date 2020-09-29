@@ -45,8 +45,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/android/FirebaseDynamicLinksPlugin.java" target-dir="src/by/chemerisuk/cordova/firebase" />
 
         <!--  <dependency url="https://github.com/achinita/cordova-support-android-plugin" version="~1.0.0"/> versioning -->
-        <dependency url="https://github.com/achinita/cordova-support-android-plugin"/>
-        <dependency url="https://github.com/achinita/cordova-support-google-services"/>
+        <dependency id="cordova-support-android-plugin" url="https://github.com/achinita/cordova-support-android-plugin"/>
+        <dependency id="cordova-support-google-services" url="https://github.com/achinita/cordova-support-google-services"/>
 
         <framework src="com.google.firebase:firebase-dynamic-links:$ANDROID_FIREBASE_DYNAMICLINKS_VERSION" />
     </platform>
