@@ -24,7 +24,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <preference name="PAGE_LINK_DOMAIN" />
 
     <!--<dependency id="cordova-plugin-firebase-analytics" url="https://github.com/achinita/cordova-plugin-firebase-analytics"/>-->
-    <dependency id="cordova-plugin-firebase" url="https://github.com/TruewindIT/cordova-plugin-firebase-only-analytics-notifications"/>
+    <dependency id="cordova-plugin-firebase" url="https://github.com/achinita/cordova-plugin-firebase-only-analytics-notifications"/>
 
     <platform name="android">
          <hook type="after_plugin_install" src="scripts/crashlytics/android/after_plugin_install.js" />
